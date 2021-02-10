@@ -1,103 +1,131 @@
 digraph ID3_Tree {
-"0" [shape=box, style=filled, label="worst area
+"0" [shape=box, style=filled, label="worst perimeter
 ", weight=1]
 "1" [shape=box, style=filled, label="worst concave points
 ", weight=2]
-0 -> 1 [ label = "<=884.55"];
-"2" [shape=box, style=filled, label="radius error
+0 -> 1 [ label = "<=105.95"];
+"2" [shape=box, style=filled, label="area error
 ", weight=3]
-1 -> 2 [ label = "<=0.11"];
-"3" [shape=box, style=filled, label="1
-(249)
+1 -> 2 [ label = "<=0.14"];
+"3" [shape=box, style=filled, label="worst texture
 ", weight=4]
-2 -> 3 [ label = "<=1.05"];
-"4" [shape=box, style=filled, label="0
-(1)
-", weight=4]
-2 -> 4 [ label = ">1.05"];
-"5" [shape=box, style=filled, label="mean concave points
-", weight=3]
-1 -> 5 [ label = ">0.11"];
-"6" [shape=box, style=filled, label="compactness error
-", weight=4]
-5 -> 6 [ label = "<=0.05"];
-"7" [shape=box, style=filled, label="0
+2 -> 3 [ label = "<=48.97"];
+"4" [shape=box, style=filled, label="1
+(221)
+", weight=5]
+3 -> 4 [ label = "<=30.15"];
+"5" [shape=box, style=filled, label="worst radius
+", weight=5]
+3 -> 5 [ label = ">30.15"];
+"6" [shape=box, style=filled, label="1
+(28)
+", weight=6]
+5 -> 6 [ label = "<=14.43"];
+"7" [shape=box, style=filled, label="compactness error
+", weight=6]
+5 -> 7 [ label = ">14.43"];
+"8" [shape=box, style=filled, label="0
 (2)
-", weight=5]
-6 -> 7 [ label = "<=0.01"];
-"8" [shape=box, style=filled, label="mean texture
-", weight=5]
-6 -> 8 [ label = ">0.01"];
+", weight=7]
+7 -> 8 [ label = "<=0.01"];
 "9" [shape=box, style=filled, label="1
-(23)
-", weight=6]
-8 -> 9 [ label = "<=25.92"];
-"10" [shape=box, style=filled, label="0
-(1)
-", weight=6]
-8 -> 10 [ label = ">25.92"];
-"11" [shape=box, style=filled, label="worst texture
+(6)
+", weight=7]
+7 -> 9 [ label = ">0.01"];
+"10" [shape=box, style=filled, label="mean smoothness
 ", weight=4]
-5 -> 11 [ label = ">0.05"];
-"12" [shape=box, style=filled, label="area error
+2 -> 10 [ label = ">48.97"];
+"11" [shape=box, style=filled, label="1
+(2)
 ", weight=5]
-11 -> 12 [ label = "<=25.35"];
-"13" [shape=box, style=filled, label="1
-(9)
-", weight=6]
-12 -> 13 [ label = "<=22.46"];
-"14" [shape=box, style=filled, label="mean radius
-", weight=6]
-12 -> 14 [ label = ">22.46"];
-"15" [shape=box, style=filled, label="0
-(4)
-", weight=7]
-14 -> 15 [ label = "<=14.11"];
-"16" [shape=box, style=filled, label="1
+10 -> 11 [ label = "<=0.09"];
+"12" [shape=box, style=filled, label="0
+(2)
+", weight=5]
+10 -> 12 [ label = ">0.09"];
+"13" [shape=box, style=filled, label="worst texture
+", weight=3]
+1 -> 13 [ label = ">0.14"];
+"14" [shape=box, style=filled, label="worst symmetry
+", weight=4]
+13 -> 14 [ label = "<=27.41"];
+"15" [shape=box, style=filled, label="1
+(7)
+", weight=5]
+14 -> 15 [ label = "<=0.38"];
+"16" [shape=box, style=filled, label="0
 (3)
-", weight=7]
-14 -> 16 [ label = ">14.11"];
-"17" [shape=box, style=filled, label="perimeter error
 ", weight=5]
-11 -> 17 [ label = ">25.35"];
-"18" [shape=box, style=filled, label="mean perimeter
+14 -> 16 [ label = ">0.38"];
+"17" [shape=box, style=filled, label="0
+(7)
+", weight=4]
+13 -> 17 [ label = ">27.41"];
+"18" [shape=box, style=filled, label="worst radius
+", weight=2]
+0 -> 18 [ label = ">105.95"];
+"19" [shape=box, style=filled, label="worst smoothness
+", weight=3]
+18 -> 19 [ label = "<=18.22"];
+"20" [shape=box, style=filled, label="mean texture
+", weight=4]
+19 -> 20 [ label = "<=0.14"];
+"21" [shape=box, style=filled, label="worst symmetry
+", weight=5]
+20 -> 21 [ label = "<=20.79"];
+"22" [shape=box, style=filled, label="mean radius
 ", weight=6]
-17 -> 18 [ label = "<=1.62"];
-"19" [shape=box, style=filled, label="0
+21 -> 22 [ label = "<=0.23"];
+"23" [shape=box, style=filled, label="1
 (1)
 ", weight=7]
-18 -> 19 [ label = "<=86.22"];
-"20" [shape=box, style=filled, label="1
+22 -> 23 [ label = "<=15.05"];
+"24" [shape=box, style=filled, label="0
+(1)
+", weight=7]
+22 -> 24 [ label = ">15.05"];
+"25" [shape=box, style=filled, label="1
+(16)
+", weight=6]
+21 -> 25 [ label = ">0.23"];
+"26" [shape=box, style=filled, label="mean smoothness
+", weight=5]
+20 -> 26 [ label = ">20.79"];
+"27" [shape=box, style=filled, label="mean radius
+", weight=6]
+26 -> 27 [ label = "<=0.09"];
+"28" [shape=box, style=filled, label="1
 (2)
 ", weight=7]
-18 -> 20 [ label = ">86.22"];
-"21" [shape=box, style=filled, label="0
-(18)
-", weight=6]
-17 -> 21 [ label = ">1.62"];
-"22" [shape=box, style=filled, label="mean concavity
-", weight=2]
-0 -> 22 [ label = ">884.55"];
-"23" [shape=box, style=filled, label="mean texture
-", weight=3]
-22 -> 23 [ label = "<=0.06"];
-"24" [shape=box, style=filled, label="1
+27 -> 28 [ label = "<=15.42"];
+"29" [shape=box, style=filled, label="0
+(1)
+", weight=7]
+27 -> 29 [ label = ">15.42"];
+"30" [shape=box, style=filled, label="0
 (6)
+", weight=6]
+26 -> 30 [ label = ">0.09"];
+"31" [shape=box, style=filled, label="mean texture
 ", weight=4]
-23 -> 24 [ label = "<=19.54"];
-"25" [shape=box, style=filled, label="0
-(8)
-", weight=4]
-23 -> 25 [ label = ">19.54"];
-"26" [shape=box, style=filled, label="0
-(128)
+19 -> 31 [ label = ">0.14"];
+"32" [shape=box, style=filled, label="1
+(1)
+", weight=5]
+31 -> 32 [ label = "<=12.77"];
+"33" [shape=box, style=filled, label="0
+(29)
+", weight=5]
+31 -> 33 [ label = ">12.77"];
+"34" [shape=box, style=filled, label="0
+(120)
 ", weight=3]
-22 -> 26 [ label = ">0.06"];
+18 -> 34 [ label = ">18.22"];
 {rank=same; 0;};
-{rank=same; 1;22;};
-{rank=same; 2;5;23;26;};
-{rank=same; 3;4;6;11;24;25;};
-{rank=same; 7;8;12;17;};
-{rank=same; 9;10;13;14;18;21;};
-{rank=same; 15;16;19;20;};
+{rank=same; 1;18;};
+{rank=same; 2;13;19;34;};
+{rank=same; 3;10;14;17;20;31;};
+{rank=same; 4;5;11;12;15;16;21;26;32;33;};
+{rank=same; 6;7;22;25;27;30;};
+{rank=same; 8;9;23;24;28;29;};
 }
